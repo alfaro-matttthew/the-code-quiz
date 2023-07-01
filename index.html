@@ -13,12 +13,12 @@
       <div class="interface-container">
         <!-- Title Card -->
         <div class="title" id="homeTitle">
-          <h1>The Great Code Quiz</h1>
+          <h1 id=""mainHomeTitle>The Great Code Quiz</h1>
         </div>
         <!-- Menu Bar -->
         <div class="interface" id="homeIntF">
-          <button id="startBtn">Take Quiz</button>
-          <button id="scoreBtn">High Scores</button>
+          <button class="home-menu-btn" id="startBtn">Take Quiz</button>
+          <button class="home-menu-btn" id="scoreBtn">High Scores</button>
         </div>
       </div>
     </section>
@@ -39,6 +39,9 @@
     <!-- !!! ----- Game Screen Window ----- !!! -->
     <section class="screen-window" id="gameScreen">
       <div class="interface-container">
+
+
+
         <!-- Title Card -->
         <div class="title" id="gameTitle">
           <h1>The Great Code Quiz</h1>
@@ -47,27 +50,34 @@
         <div class="interface" id="gameIntF">
           <!-- Question Area -->
           <div class="game=container">
-            <p id="questionBox"></p>
-            <div class="question-area">
-              <div class="question-box">
+            <!-- Question Box -->
+            <p class="question-item" id="questionBox"></p>
+            <!-- Multiple Choice -->
+            <div class="option-area">
+              <div class="option-box">
                 <button id="bubbleA"></button>
                 <p id="questionA">example option</p>
               </div>
-              <div class="question-box">
+              <div class="option-box">
                 <button id="bubbleB"></button>
                 <p id="questionB">example option</p>
               </div>
-              <div class="question-box">
+              <div class="option-box">
                 <button id="bubbleC"></button>
                 <p id="questionC">example option</p>
               </div>
-              <div class="question-box">
+              <div class="option-box">
                 <button id="bubbleD"></button>
                 <p id="questionD">example option</p>
               </div>
             </div>
+            <!-- Submit Button -->
+            <div class="submit-btn" id="submitBtn">
+                <img>
+            </div>
           </div>
-          <div id="statBar">
+          <!-- Score and Time Bar -->
+          <div class="stats-area" id="statBar">
             <div class="score-box">
               <p>Score:</p>
               <p id="scoreVal"></p>
@@ -76,10 +86,13 @@
               <p>Time:</p>
               <p id="timeVal"></p>
             </div>
-          </div>
+        </div>
         </div>
       </div>
     </section>
+
+
+
     <!-- !!! ----- Scorebaord Window ----- !!! -->
     <section class="screen-window" id="scoreScreen">
       <div class="interface-container">
@@ -89,8 +102,10 @@
         </div>
         <!-- Scoreboard -->
         <div class="interface" id="scoreIntF">
-          <h3>HighScores</h3>
-          <p id="scoreChart"></p>
+            
+            <h3>HighScores</h3>
+
+            <p id="scoreChart"></p>
         </div>
       </div>
     </section>

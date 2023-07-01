@@ -25,12 +25,12 @@
 
 /* !!! ----- HOME CSS ----- !!! */
 
-#home-title {
-
+#mainHomeTitle {
+    border: 1px dashed hsla(0, 0%, 0%, 0.5);
 }
 
-#home-title h1 {
-
+.home-menu-btn {
+    border: 1px dashed hsla(0, 0%, 0%, 0.5);
 }
 
 /* !!! ----- RULES CSS ----- !!! */
@@ -39,6 +39,57 @@
 
 /* !!! ----- GAME CSS ----- !!! */
 
+.game-container {
+    border: 1px dashed hsla(0, 0%, 0%, 0.5);
 
+}
+
+.question-item {
+    border: 1px dashed hsla(0, 0%, 0%, 0.5);
+
+}
+
+.option-area {
+    border: 1px dashed hsla(0, 0%, 0%, 0.5);
+
+}
+
+.option-box {
+    border: 1px dashed hsla(0, 0%, 0%, 0.5);
+
+}
+
+.option-box button {
+    border: 1px dashed hsla(0, 0%, 0%, 0.5);
+}
+
+.option-box p {
+    border: 1px dashed hsla(0, 0%, 0%, 0.5);
+}
+
+.submit-btn {
+    border: 1px dashed hsla(0, 0%, 0%, 0.5);
+
+}
+
+.submit-btn img {
+    border: 1px dashed hsla(0, 0%, 0%, 0.5);
+
+}
+
+.stats-area {
+    border: 1px dashed hsla(0, 0%, 0%, 0.5);
+ 
+}
 
 /* !!! ----- SCORE CSS ----- !!! */
+
+h3 {
+    border: 1px dashed hsla(0, 0%, 0%, 0.5);
+
+}
+
+#scoreChart {
+    border: 1px dashed hsla(0, 0%, 0%, 0.5);
+
+}
