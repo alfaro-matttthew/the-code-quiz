@@ -1,0 +1,44 @@
+
+/* !!! ----- MASTER CSS ----- !!! */
+
+.screen-window {
+    border: 1px dashed hsla(0, 0%, 0%, 0.5);
+    margin: 0 auto;
+    height: 720px;
+}
+
+.interface-container {
+    border: 1px dashed hsla(0, 0%, 0%, 0.5);
+}
+
+.title {
+    border: 1px dashed hsla(0, 0%, 0%, 0.5);
+}
+
+.title h1 {
+
+}
+
+.interface {
+    border: 1px dashed hsla(0, 0%, 0%, 0.5);
+}
+
+/* !!! ----- HOME CSS ----- !!! */
+
+#home-title {
+
+}
+
+#home-title h1 {
+
+}
+
+/* !!! ----- RULES CSS ----- !!! */
+
+
+
+/* !!! ----- GAME CSS ----- !!! */
+
+
+
+/* !!! ----- SCORE CSS ----- !!! */

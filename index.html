@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+  </head>
+  <body>
+    <!-- !!! ----- Start Screen Window ----- !!! -->
+    <section class="screen-window" id="homeScreen">
+      <div class="interface-container">
+        <!-- Title Card -->
+        <div class="title" id="homeTitle">
+          <h1>The Great Code Quiz</h1>
+        </div>
+        <!-- Menu Bar -->
+        <div class="interface" id="homeIntF">
+          <button id="startBtn">Take Quiz</button>
+          <button id="scoreBtn">High Scores</button>
+        </div>
+      </div>
+    </section>
+    <!-- !!! ----- Game Instructions Window ----- !!! -->
+    <section class="screen-window" id="rulesScreen">
+      <div class="interface-container">
+        <!-- Title Card -->
+        <div class="title" id="rulesTitle">
+          <h1>The Great Code Quiz</h1>
+        </div>
+        <!-- Instructions -->
+        <div class="interface" id="rulesIntF">
+          <h3>HighScores</h3>
+          <p id="scoreChart"></p>
+        </div>
+      </div>
+    </section>
+    <!-- !!! ----- Game Screen Window ----- !!! -->
+    <section class="screen-window" id="gameScreen">
+      <div class="interface-container">
+        <!-- Title Card -->
+        <div class="title" id="gameTitle">
+          <h1>The Great Code Quiz</h1>
+        </div>
+        <!-- Game Interface -->
+        <div class="interface" id="gameIntF">
+          <!-- Question Area -->
+          <div class="game=container">
+            <p id="questionBox"></p>
+            <div class="question-area">
+              <div class="question-box">
+                <button id="bubbleA"></button>
+                <p id="questionA">example option</p>
+              </div>
+              <div class="question-box">
+                <button id="bubbleB"></button>
+                <p id="questionB">example option</p>
+              </div>
+              <div class="question-box">
+                <button id="bubbleC"></button>
+                <p id="questionC">example option</p>
+              </div>
+              <div class="question-box">
+                <button id="bubbleD"></button>
+                <p id="questionD">example option</p>
+              </div>
+            </div>
+          </div>
+          <div id="statBar">
+            <div class="score-box">
+              <p>Score:</p>
+              <p id="scoreVal"></p>
+            </div>
+            <div class="time-box">
+              <p>Time:</p>
+              <p id="timeVal"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- !!! ----- Scorebaord Window ----- !!! -->
+    <section class="screen-window" id="scoreScreen">
+      <div class="interface-container">
+        <!-- Title Card -->
+        <div class="title" id="scoreTitle">
+          <h1>The Great Code Quiz</h1>
+        </div>
+        <!-- Scoreboard -->
+        <div class="interface" id="scoreIntF">
+          <h3>HighScores</h3>
+          <p id="scoreChart"></p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
