@@ -5,32 +5,77 @@
     border: 1px dashed hsla(0, 0%, 0%, 0.5);
     margin: 0 auto;
     height: 720px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .interface-container {
     border: 1px dashed hsla(0, 0%, 0%, 0.5);
+    width: 600px;
+    height: 450px;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .title {
     border: 1px dashed hsla(0, 0%, 0%, 0.5);
-}
 
-.title h1 {
+    padding: 15px 5px;
+    width: 250px;
 
+    font-size: 28px;
+    text-align: center;
 }
 
 .interface {
     border: 1px dashed hsla(0, 0%, 0%, 0.5);
+
+    display: flex;
+    flex-direction: column;
+}
+
+p {
+
 }
 
 /* !!! ----- HOME CSS ----- !!! */
 
-#mainHomeTitle {
+#homeScreenInterface {
+    
+}
+
+#homeTitle {
     border: 1px dashed hsla(0, 0%, 0%, 0.5);
+
+    width: 500px;
+    height: 150px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+span {
+    font-size: 72px;
+}
+
+#homeIntF {
+    margin: 15px;
+    padding: 5px;
+    width: 150px;
 }
 
 .home-menu-btn {
     border: 1px dashed hsla(0, 0%, 0%, 0.5);
+    
+    padding: 15px;
+    margin: 10px;
 }
 
 /* !!! ----- RULES CSS ----- !!! */
