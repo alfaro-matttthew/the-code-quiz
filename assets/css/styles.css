@@ -48,7 +48,7 @@
 }
 
 p {
-
+    display: inline;
 }
 
 /* !!! ----- HOME CSS ----- !!! */
@@ -117,47 +117,93 @@ h3 {
 
 /* !!! ----- GAME CSS ----- !!! */
 
+#gameIntF {
+    border: 1px dashed hsla(0, 0%, 0%, 0.5);
+}
+
 .game-container {
     border: 1px dashed hsla(0, 0%, 0%, 0.5);
 
+    height: 200px;
+    width: 300px;
+    padding: 10px;
+
+    position: relative;
+}
+
+#questionBox {
+    border: 1px dashed hsla(0, 0%, 0%, 0.5);
+    padding: 10px 5px;
 }
 
 .question-item {
     border: 1px dashed hsla(0, 0%, 0%, 0.5);
 
+    width: 100%;
+    margin: 5px;
 }
 
 .option-area {
     border: 1px dashed hsla(0, 0%, 0%, 0.5);
 
+    /* display: flex;
+    flex-direction: column; */
 }
 
-.option-box {
+.option-item {
     border: 1px dashed hsla(0, 0%, 0%, 0.5);
+    margin:15px 0px;
+    width: 200px;
 
-}
-
-.option-box button {
-    border: 1px dashed hsla(0, 0%, 0%, 0.5);
-}
-
-.option-box p {
-    border: 1px dashed hsla(0, 0%, 0%, 0.5);
+    border-radius: 10px;
 }
 
 .submit-btn {
     border: 1px dashed hsla(0, 0%, 0%, 0.5);
+    padding: 10px;
+    width: 45px;
+    height: 45px;
 
+    border-radius: 20px;
+
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    z-index: 2;
 }
 
 .submit-btn img {
     border: 1px dashed hsla(0, 0%, 0%, 0.5);
+    padding: 2.5px;
+    width: 40px;
+    height: 40px;
 
+    border-radius: 15px;
 }
 
 .stats-area {
     border: 1px dashed hsla(0, 0%, 0%, 0.5);
- 
+
+    width: 275px;
+    height: 25px;
+
+    border-radius: 0px 0px 15px 15px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.score-box {
+    border: 1px dashed hsla(0, 0%, 0%, 0.5);
+    width: 50%;
+    padding: 5px 15px;
+}
+
+.time-box {
+    border: 1px dashed hsla(0, 0%, 0%, 0.5);
+    width: 50%;
+    padding: 5px 15px;
+    text-align: right;
 }
 
 /* !!! ----- SCORE CSS ----- !!! */
