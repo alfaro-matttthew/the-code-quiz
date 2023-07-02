@@ -5,40 +5,276 @@
     border: 1px dashed hsla(0, 0%, 0%, 0.5);
     margin: 0 auto;
     height: 720px;
+
+    background-color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .interface-container {
     border: 1px dashed hsla(0, 0%, 0%, 0.5);
+    width: 600px;
+    height: 450px;
+
+    background-color: rgb(230, 230, 230);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .title {
     border: 1px dashed hsla(0, 0%, 0%, 0.5);
-}
 
-.title h1 {
+    width: 600px;
+    height: 100px;
 
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
 }
 
 .interface {
     border: 1px dashed hsla(0, 0%, 0%, 0.5);
+
+    width: 600px;
+    height: 350px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    border: 1px dashed hsla(0, 0%, 0%, 0.5);
+    padding: 15px 20px;
+
+    background-color: white;
+
+    font-size: 24px;
+    text-align: center;
+}
+
+h2 {
+    border: 1px dashed hsla(0, 0%, 0%, 0.5);
+    padding: 10px 25px;
+
+    background-color: white;
+
+    font-size: 18px;
+}
+
+p {
+    display: inline;
 }
 
 /* !!! ----- HOME CSS ----- !!! */
 
-#home-title {
-
+#homeScreenInterface {
+    
 }
 
-#home-title h1 {
+#homeTitle {
+    border: 1px dashed hsla(0, 0%, 0%, 0.5);
 
+    width: 600px;
+    height: 275px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+span {
+    font-size: 72px;
+}
+
+#homeIntF {
+    border: 1px dashed hsla(0, 0%, 0%, 0.5);
+    
+    width: 150px;
+    height: 175px;
+}
+
+.home-menu-btn {
+    border: 1px dashed hsla(0, 0%, 0%, 0.5);
+
+    background-color: white;
+    
+    padding: 10px;
+    margin: 10px;
 }
 
 /* !!! ----- RULES CSS ----- !!! */
 
+#rulesScreenInterface {
+    border: 1px dashed hsla(0, 0%, 0%, 0.5);
 
+}
+
+
+
+#rulesChart {
+    border: 1px dashed hsla(0, 0%, 0%, 0.5);
+
+    width: 300px;
+    padding: 5px;
+
+    display: flex;
+    justify-content: center;
+}
+
+#rulesImg {
+    border: 1px dashed hsla(0, 0%, 0%, 0.5);
+
+    width: 100%;
+}
+
+#startTest {
+    border: 1px dashed hsla(0, 0%, 0%, 0.5);
+    padding: 10px 18px;
+
+    background-color: white;
+
+    font-size: 14px;
+}
 
 /* !!! ----- GAME CSS ----- !!! */
 
+#gameIntF {
+    border: 1px dashed hsla(0, 0%, 0%, 0.5);
+    
+}
 
+.game-container {
+    border: 1px dashed hsla(0, 0%, 0%, 0.5);
+
+    height: 200px;
+    width: 300px;
+    padding: 10px;
+
+    background-color: white;
+
+    position: relative;
+}
+
+#questionBox {
+    border: 1px dashed hsla(0, 0%, 0%, 0.5);
+    padding: 10px 5px;
+
+    background-color: rgb(180, 180, 180);
+}
+
+.question-item {
+    border: 1px dashed hsla(0, 0%, 0%, 0.5);
+
+    width: 100%;
+    margin: 5px;
+}
+
+.option-area {
+    border: 1px dashed hsla(0, 0%, 0%, 0.5);
+
+    /* display: flex;
+    flex-direction: column; */
+}
+
+.option-item {
+    border: 1px dashed hsla(0, 0%, 0%, 0.5);
+    margin:15px 0px;
+    width: 200px;
+
+    background-color: rgb(180, 180, 180);
+
+    border-radius: 10px;
+}
+
+.submit-btn {
+    border: 1px dashed hsla(0, 0%, 0%, 0.5);
+    padding: 10px;
+    width: 45px;
+    height: 45px;
+
+    border-radius: 20px;
+
+    background-color: rgb(180, 180, 180);
+
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    z-index: 2;
+}
+
+.submit-btn img {
+    border: 1px dashed hsla(0, 0%, 0%, 0.5);
+    padding: 2.5px;
+    width: 40px;
+    height: 40px;
+
+    border-radius: 15px;
+}
+
+.stats-area {
+    border: 1px dashed hsla(0, 0%, 0%, 0.5);
+
+    width: 275px;
+    height: 25px;
+
+    border-radius: 0px 0px 15px 15px;
+
+    background-color: white;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.score-box {
+    border: 1px dashed hsla(0, 0%, 0%, 0.5);
+    width: 50%;
+    padding: 5px 15px;
+}
+
+.time-box {
+    border: 1px dashed hsla(0, 0%, 0%, 0.5);
+    width: 50%;
+    padding: 5px 15px;
+    text-align: right;
+}
 
 /* !!! ----- SCORE CSS ----- !!! */
+
+#scoreContainer {
+    position: relative;
+}
+
+#scoreChart {
+    border: 1px dashed hsla(0, 0%, 0%, 0.5);
+
+}
+
+.score-board {
+    border: 1px dashed hsla(0, 0%, 0%, 0.5);
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+
+    background-color: white;
+}
+
+.score-board p {
+    line-height: 16px;
+}
+
+#backBtn {
+    border: 1px dashed hsla(0, 0%, 0%, 0.5);
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+
+.back-btn img {
+    width: 50px;
+}
