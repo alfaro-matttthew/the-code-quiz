@@ -31,10 +31,11 @@
         </div>
         <!-- Instructions -->
         <div class="interface" id="rulesIntF">
-          <h3>Instructions</h3>
+          <h2>Instructions</h2>
           <div id="rulesChart">
             <img id="rulesImg" src="./assets/images/ex-screenshot.png" />
           </div>
+          <a id="startTest">Start the Quiz</a>
         </div>
       </div>
     </section>
@@ -79,9 +80,9 @@
               </div>
             </form>
             <!-- Submit Button -->
-            <div class="submit-btn" id="submitBtn">
+            <a class="submit-btn" id="submitBtn">
               <img src="./assets/images/check-mark.png" />
-            </div>
+            </a>
           </div>
           <!-- Score and Time Bar -->
           <div class="stats-area" id="statBar">
@@ -99,14 +100,17 @@
     </section>
     <!-- !!! ----- Scorebaord Window ----- !!! -->
     <section class="screen-window" id="scoreScreen">
-      <div class="interface-container">
+      <div class="interface-container" id="scoreContainer">
+        <a class="back-btn" id="backBtn">
+          <img src="./assets/images/back-arrow.png" />
+        </a>
         <!-- Title Card -->
         <div class="title" id="scoreTitle">
           <h1>The Great Code Quiz</h1>
         </div>
         <!-- Scoreboard -->
         <div class="interface" id="scoreIntF">
-          <h3>HighScores</h3>
+          <h2>HighScores</h2>
           <div class="score-board">
             <p id="scoreChart">Matthew 89</p>
           </div>
