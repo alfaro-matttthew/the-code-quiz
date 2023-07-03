@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Assign Array Values to Radio Inputs</title>
+  </head>
+  <body>
+    <label
+      ><input type="radio" name="option" class="radio-option" /> <span></span
+    ></label>
+    <label
+      ><input type="radio" name="option" class="radio-option" /> <span></span
+    ></label>
+    <label
+      ><input type="radio" name="option" class="radio-option" /> <span></span
+    ></label>
+    <label
+      ><input type="radio" name="option" class="radio-option" /> <span></span
+    ></label>
+
+    <script>
+      var valuesArray = ["Value 1", "Value 2", "Value 3", "Value 4"];
+
+      var radioInputs = document.querySelectorAll(".radio-option");
+
+      for (var i = 0; i < radioInputs.length; i++) {
+        radioInputs[i].value = valuesArray[i];
+        radioInputs[i].nextElementSibling.textContent = valuesArray[i];
+      }
+    </script>
+  </body>
+</html>
