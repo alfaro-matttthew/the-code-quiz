@@ -17,8 +17,12 @@
         </div>
         <!-- Menu Bar -->
         <div class="interface" id="homeIntF">
-          <button class="home-menu-btn" id="startBtn">Take Quiz</button>
-          <button class="home-menu-btn" id="scoreBtn">High Scores</button>
+          <button class="home-menu-btn" id="startBtn" onclick="rulesActive()">
+            Take Quiz
+          </button>
+          <button class="home-menu-btn" id="scoreBtn" onclick="scoreActive()">
+            High Scores
+          </button>
         </div>
       </div>
     </section>
@@ -57,27 +61,33 @@
               </p>
             </div>
             <!-- Multiple Choice -->
-            <form class="option-area">
+            <form class="option-area" id="optionArea">
               <div class="option-item">
-                <input type="radio" id="optA" name="optA" value="true" />
+                <input type="radio" id="optA" name="radioOption" value="" />
                 <label for="optA">A.</label>
-                <p id="optAType">Example Answer</p>
+                <!-- <p id="optAType">Example Answer</p> -->
               </div>
               <div class="option-item">
-                <input type="radio" id="optA" name="optA" value="true" />
+                <input type="radio" id="optB" name="radioOption" value="" />
                 <label for="optA">B.</label>
-                <p id="optBType">Example Answer</p>
+                <!-- <p id="optBType">Example Answer</p> -->
               </div>
               <div class="option-item">
-                <input type="radio" id="optA" name="optA" value="true" />
+                <input type="radio" id="optC" name="radioOption" value="" />
                 <label for="optA">C.</label>
-                <p id="optCType">Example Answer</p>
+                <!-- <p id="optCType">Example Answer</p> -->
               </div>
               <div class="option-item">
-                <input type="radio" id="optA" name="optA" value="true" />
+                <input type="radio" id="optD" name="radioOption" value="" />
                 <label for="optA">D.</label>
-                <p id="optDType">Example Answer</p>
+                <!-- <p id="optDType">Example Answer</p> -->
               </div>
+              <!-- <input
+                class="submit-btn"
+                id="submitBtn"
+                type="submit"
+                value="Submit"
+              /> -->
             </form>
             <!-- Submit Button -->
             <a class="submit-btn" id="submitBtn">
@@ -101,7 +111,7 @@
     <!-- !!! ----- Scorebaord Window ----- !!! -->
     <section class="screen-window" id="scoreScreen">
       <div class="interface-container" id="scoreContainer">
-        <a class="back-btn" id="backBtn">
+        <a class="back-btn" id="backBtn" onclick="homeActive()">
           <img src="./assets/images/back-arrow.png" />
         </a>
         <!-- Title Card -->
@@ -117,5 +127,8 @@
         </div>
       </div>
     </section>
+    <script src="./assets/js/page-navigation.js"></script>
+    <script src="./assets/js/questions.js"></script>
+    <script src="./assets/js/main.js"></script>
   </body>
 </html>
