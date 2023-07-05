@@ -24,14 +24,4 @@ function questionSwitch() {
     
 }
 
-document.getElementById("startTest").addEventListener("click", questionSwitch);
 
-function init() {
-    clear
-    document.getElementById("questionItem").textContent = "";
-    
-    for (var i = 0; i < radioOptions.length; i++) {
-        radioOptions[i].textContent = "";
-    }
-
-}
