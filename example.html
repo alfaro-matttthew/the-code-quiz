@@ -1,31 +1,69 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Assign Array Values to Radio Inputs</title>
-  </head>
-  <body>
-    <label
-      ><input type="radio" name="option" class="radio-option" /> <span></span
-    ></label>
-    <label
-      ><input type="radio" name="option" class="radio-option" /> <span></span
-    ></label>
-    <label
-      ><input type="radio" name="option" class="radio-option" /> <span></span
-    ></label>
-    <label
-      ><input type="radio" name="option" class="radio-option" /> <span></span
-    ></label>
+<head>
+  <title>Quiz</title>
+</head>
+<body>
+  <div id="question"></div>
+  <div id="choices"></div>
+  <button id="submit">Submit</button>
+  <div id="result"></div>
 
-    <script>
-      var valuesArray = ["Value 1", "Value 2", "Value 3", "Value 4"];
+  <script>
+    const quizQuestions = [
+      {
+        question: "What is the capital of France?",
+        choices: ["London", "Paris", "Berlin", "Rome"],
+        correctAnswer: "Paris"
+      },
+      // Add more questions...
+    ];
 
-      var radioInputs = document.querySelectorAll(".radio-option");
+    let currentQuestion = 0;
+    let score = 0;
 
-      for (var i = 0; i < radioInputs.length; i++) {
-        radioInputs[i].value = valuesArray[i];
-        radioInputs[i].nextElementSibling.textContent = valuesArray[i];
+    function displayQuestion() {
+      const questionContainer = document.getElementById("question");
+      const choicesContainer = document.getElementById("choices");
+      const submitButton = document.getElementById("submit");
+
+      questionContainer.textContent = quizQuestions[currentQuestion].question;
+
+      // Generate answer choices
+      choicesContainer.innerHTML = "";
+      quizQuestions[currentQuestion].choices.forEach(choice => {
+        const option = document.createElement("button");
+        option.textContent = choice;
+        option.addEventListener("click", handleAnswerSelection);
+        choicesContainer.appendChild(option);
+      });
+
+      submitButton.disabled = true;
+    }
+
+    function handleAnswerSelection(event) {
+      const selectedAnswer = event.target.textContent;
+      const correctAnswer = quizQuestions[currentQuestion].correctAnswer;
+
+      if (selectedAnswer === correctAnswer) {
+        score++;
       }
-    </script>
-  </body>
+
+      currentQuestion++;
+      if (currentQuestion < quizQuestions.length) {
+        displayQuestion();
+      } else {
+        displayResult();
+      }
+    }
+
+    function displayResult() {
+      const resultContainer = document.getElementById("result");
+      const percentage = (score / quizQuestions.length) * 100;
+      resultContainer.textContent = `You scored ${percentage}%`;
+    }
+
+    displayQuestion();
+  </script>
+</body>
 </html>
