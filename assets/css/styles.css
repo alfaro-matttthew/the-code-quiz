@@ -158,7 +158,7 @@ span {
 
 }
 
-#questionBox {
+#questionContainer {
     border: 1px dashed hsla(0, 0%, 0%, 0.5);
     padding: 10px 5px;
 
@@ -175,6 +175,8 @@ span {
 .option-area {
     border: 1px dashed hsla(0, 0%, 0%, 0.5);
 
+    
+
     /* display: flex;
     flex-direction: column; */
 
@@ -189,11 +191,13 @@ span {
     background-color: rgb(180, 180, 180);
 
     border-radius: 10px;
+
+    display: block;
 }
 
 
 
-.submit-btn {
+/* .submit-btn {
     border: 1px dashed hsla(0, 0%, 0%, 0.5);
     padding: 10px;
     width: 45px;
@@ -216,7 +220,7 @@ span {
     height: 40px;
 
     border-radius: 15px;
-}
+} */
 
 .stats-area {
     border: 1px dashed hsla(0, 0%, 0%, 0.5);
