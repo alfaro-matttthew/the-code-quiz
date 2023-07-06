@@ -11,16 +11,27 @@ let radioOptions = [radioA, radioB, radioC, radioD]
 
 function questionSwitch() {
 
-    // Variables and Arrays compiling data for the Functions
-    var questionContainer = document.getElementById("questionItem");
+    if (currentQuestion < 5) {
 
-    questionContainer.textContent = questionList[0].question;
+        document.getElementById("questionItem").textContent = "";
+        
+        for (var i = 0; i < radioOptions.length; i++) {
+            radioOptions[i].textContent = "";
+        }
 
-    for (var i = 0; i < radioOptions.length; i++) {
-        radioOptions[i].textContent = questionList[currentQuestion].options[i];
-        console.log(radioOptions[i].textContent);
+        // Variables and Arrays compiling data for the Functions
+        var questionContainer = document.getElementById("questionItem");
+
+        questionContainer.textContent = questionList[currentQuestion].question;
+
+        for (var i = 0; i < radioOptions.length; i++) {
+            radioOptions[i].textContent = questionList[currentQuestion].options[i];
+            console.log(radioOptions[i].textContent);
+        }
     }
-    
+    else {
+        endGame();
+    }
     
 }
 

@@ -18,6 +18,10 @@ function hangleAnswerSelection() {
         else {
             timeLeft-=10;
         }
+
+        currentQuestion++;
+
+        questionSwitch();
     }
 
 document.getElementById("optA").addEventListener("click", hangleAnswerSelection);

@@ -148,7 +148,7 @@ span {
 .game-container {
     border: 1px dashed hsla(0, 0%, 0%, 0.5);
 
-    height: 200px;
+    /* height: 200px; */
     width: 300px;
     padding: 10px;
 
@@ -186,7 +186,7 @@ span {
 .option-item {
     border: 1px dashed hsla(0, 0%, 0%, 0.5);
     margin:15px 0px;
-    width: 200px;
+    /* width: 200px; */
 
     background-color: rgb(180, 180, 180);
 

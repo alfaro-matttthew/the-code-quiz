@@ -2,9 +2,11 @@ var timerEl = document.getElementById("timeVal");
 
 var timeLeft = 60;
 
+var intervalTimer
+
 function startTimer() {
 
-    var intervalTimer = setInterval(function() {
+    intervalTimer = setInterval(function() {
         timeLeft--;
         timerEl.textContent = "00:" + timeLeft;
 
@@ -16,6 +18,6 @@ function startTimer() {
 
 }
 
-function endGame() {
-    alert("You Lose");
-}
+// function endGame() {
+//     alert("You Lose");
+// }
