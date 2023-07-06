@@ -1,33 +1,33 @@
 
 
 var qOne = {
-    question: "What is my name?",
-    options: ["Brian",  "Jake", "Matthew", "Kurtis"],
-    answer: "Matthew"
+    question: "What is the incorrect way to declare a variable in JavaScript?",
+    options: ["var myVar;",  "variable myVar;", "let myVar;", "const myVar;"],
+    answer: "variable myVar;"
 }
 
 var qTwo = {
-    question: "The next example question goes here",
-    options: ["Option A",  "Option B", "Option C", "Option D"],
-    answer: "input#optC"
+    question: "Which method is used to add an element to the end of an array?",
+    options: ["push()",  "pop()", "shift()", "unshift()"],
+    answer: "push()"
 }
 
 var qThree = {
-    question: "And the third Example question goes here",
-    options: ["Option A",  "Option B", "Option C", "Option D"],
-    answer: "input#optC"
+    question: "How do you access the length of a string in JavaScript?",
+    options: ["stringLength()",  "len()", "lengthOf()", "length()"],
+    answer: "length()"
 }
 
 var qFour = {
-    question: "Let's do another Example question goes here",
-    options: ["Option A",  "Option B", "Option C", "Option D"],
-    answer: "input#optC"
+    question: "What does the === operator in JavaScript do?",
+    options: ["Compares two values for equality, allowing type coercion",  "Compares two values for equality, without type coercion", "Assigns a value to a variable", "Checks if two values are not equal"],
+    answer: "Compares two values for equality, without type coercion"
 }
 
 var qFive = {
-    question: "This will be the last Example question goes here",
-    options: ["Option A",  "Option B", "Option C", "Option D"],
-    answer: "input#optC"
+    question: "Which is not one of the 8 datatypes in Javascript?",
+    options: ["boolean",  "array", "string", "number"],
+    answer: "array"
 }
 
 var questionList = [qOne, qTwo, qThree, qFour, qFive];
