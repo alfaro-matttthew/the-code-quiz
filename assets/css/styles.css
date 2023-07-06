@@ -249,6 +249,38 @@ span {
     text-align: right;
 }
 
+/* !!! ----- RECORD CSS ----- !!! */
+
+#recordScreen {
+    display: none;
+
+}
+
+.record-content {
+    border: 1px dashed hsla(0, 0%, 0%, 0.5);
+
+    height: 200px;
+    width: 300px;
+
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+h3 {
+    border: 1px dashed hsla(0, 0%, 0%, 0.5);
+    padding: 10px 25px;
+
+    background-color: rgb(180, 180, 180);
+
+    font-size: 18px; 
+}
+
+
+
 /* !!! ----- SCORE CSS ----- !!! */
 
 #scoreScreen {

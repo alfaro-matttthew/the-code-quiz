@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="./assets/css/styles.css" />
   </head>
   <body>
+    <!-- --- -->
+    <!-- --- -->
     <!-- !!! ----- Start Screen Window ----- !!! -->
     <section class="screen-window" id="homeScreen">
       <div class="interface-container" id="homeScreenInterface">
@@ -26,6 +28,8 @@
         </div>
       </div>
     </section>
+    <!-- --- -->
+    <!-- --- -->
     <!-- !!! ----- Game Instructions Window ----- !!! -->
     <section class="screen-window" id="rulesScreen">
       <div class="interface-container" id="rulesScreenInterface">
@@ -43,6 +47,8 @@
         </div>
       </div>
     </section>
+    <!-- --- -->
+    <!-- --- -->
     <!-- !!! ----- Game Screen Window ----- !!! -->
     <section class="screen-window" id="gameScreen">
       <div class="interface-container">
@@ -102,6 +108,35 @@
         </div>
       </div>
     </section>
+    <!-- --- -->
+    <!-- --- -->
+    <!-- !!! ----- Record Screen Window ----- !!! -->
+    <section class="screen-window" id="recordScreen">
+      <div class="interface-container">
+        <!-- --- -->
+        <!-- --- -->
+        <!-- Title Card -->
+        <div class="title" id="recordTitle">
+          <h1>The Great Code Quiz</h1>
+        </div>
+        <!-- --- -->
+        <!-- --- -->
+        <!-- Record Interface -->
+        <div class="interface" id="recordIntF">
+          <div class="record-content">
+            <h3>Test Complete!</h3>
+            <form id="initialForm">
+                <label for="initial">Initials: </label><br>
+                <input type="text" id="initial" name="initial" value="">
+                <input type="submit" value="Submit">
+            </form>
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+    <!-- --- -->
+    <!-- --- -->
     <!-- !!! ----- Scorebaord Window ----- !!! -->
     <section class="screen-window" id="scoreScreen">
       <div class="interface-container" id="scoreContainer">
@@ -126,6 +161,7 @@
     <script src="./assets/js/question-switch.js"></script>
     <script src="./assets/js/timer.js"></script>
     <script src="./assets/js/handle-selection.js"></script>
+    <script src="./assets/js/handle-form.js"></script>
     <script src="./assets/js/end-game.js"></script>
     <script src="./assets/js/init.js"></script>
   </body>
