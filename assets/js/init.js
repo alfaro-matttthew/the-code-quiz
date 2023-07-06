@@ -8,6 +8,10 @@ function init() {
 
     timerEl.textContent - "";
 
+    if (localStorage.getItem("quizScore")) {
+        score = parseInt(localStorage.getItem("quizScore"));
+      }
+
     questionSwitch();
     startTimer();
 }
