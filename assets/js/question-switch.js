@@ -17,21 +17,11 @@ function questionSwitch() {
     questionContainer.textContent = questionList[0].question;
 
     for (var i = 0; i < radioOptions.length; i++) {
-        radioOptions[i].textContent = questionList[0].options[i];
+        radioOptions[i].textContent = questionList[currentQuestion].options[i];
         console.log(radioOptions[i].textContent);
     }
     
     
 }
 
-document.getElementById("startTest").addEventListener("click", questionSwitch);
 
-function init() {
-    clear
-    document.getElementById("questionItem").textContent = "";
-    
-    for (var i = 0; i < radioOptions.length; i++) {
-        radioOptions[i].textContent = "";
-    }
-
-}
