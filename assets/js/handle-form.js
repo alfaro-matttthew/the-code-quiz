@@ -1,10 +1,10 @@
 const form = document.getElementById("initialForm");
 
-var scoreStats = {
-    initial: "",
-    score: score,
-    time: timeLeft
-}
+// var scoreStats = {
+//     initial: "",
+//     score: score,
+//     time: timeLeft
+// }
 
 form.addEventListener('submit', function(event) {
     event.preventDefault();
@@ -15,5 +15,7 @@ form.addEventListener('submit', function(event) {
     scoreStats.initial = initial;
     console.log(scoreStats.initial);
     console.log(scoreStats);
+
+    homeActive();
     
 })

@@ -30,7 +30,8 @@ function questionSwitch() {
         }
     }
     else {
-        endGame();
+        // endGame();
+        recordActive();
     }
     
 }
