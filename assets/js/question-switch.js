@@ -19,7 +19,7 @@ function questionSwitch() {
         
         for (i = 0; i < radioOptions.length; i++) {
             radioOptions[i].textContent = "";
-            console.log(i);
+            // console.log(i);
         }
 
         // Variables and Arrays compiling data for the Functions

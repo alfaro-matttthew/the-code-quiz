@@ -2,16 +2,16 @@ var scoreBox = document.getElementById("scoreVal");
 
 var score = 0;
 
-function hangleAnswerSelection() {
+function hangleAnswerSelection(event) {
 
         const selectedAnswer = event.target.textContent;
         const correctAnswer = questionList[currentQuestion].answer;
 
-        console.log(selectedAnswer);
+        // console.log(selectedAnswer);
 
         if (selectedAnswer === correctAnswer) {
             score+=10;
-            console.log(score);
+            // console.log(score);
 
             scoreBox.textContent = score;
         }
