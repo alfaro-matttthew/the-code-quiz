@@ -1,22 +1,107 @@
 
+var form = document.getElementById("initialForm");
 
-function endGame() {
+var playerStats = JSON.parse(localStorage.getItem("highscores")) || []; 
 
-    clearInterval(intervalTimer);
+function getHighscores() {
+// Empty out the old datata
+document.querySelector(".score-board").textContent = "";
 
-    var playerStats = JSON.parse(localStorage.getItem("player")) || [];
+playerStats.forEach(element => {
+    var newHighScore = document.createElement("p");
 
-    var scoreStats = {
-        initial: "name",
-        score: score,
-        time: timeLeft
-    }
-    console.log(scoreStats);
+    var spacer = document.createElement("br");
 
-    playerStats.push(scoreStats);
-    console.log(playerStats);
+    newHighScore.textContent = `${element.initial} ${element.score}`
 
+    newHighScore.appendChild(spacer);
 
-    localStorage.setItem("player", JSON.stringify(playerStats));
+    document.querySelector(".score-board").appendChild(newHighScore);
+});
 
 }
+
+form.addEventListener("submit", function(event) {
+event.preventDefault();
+
+playerInitials = document.getElementById("initial").value;
+
+var scoreStats = {
+    initial: "",
+    score: score,
+    time: timeLeft
+};
+
+scoreStats.initial = playerInitials;
+
+playerStats.push(scoreStats);
+
+localStorage.setItem("highscores", JSON.stringify(playerStats));
+getHighscores();
+homeActive();
+
+});
+
+getHighscores();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// form.addEventListener('submit', function(event) {
+//     event.preventDefault();
+
+//     var scoreStats = {
+//         initial: "",
+//         score: score,
+//         time: timeLeft
+//     }
+
+//     var initialInput = document.getElementById("initial");
+//     var initial = initialInput.value;
+
+//     var playerStats = JSON.parse(localStorage.getItem("player")) || [];
+
+//     /**/ var /**/ scoreStats = {
+//         initial: "",
+//         score: score,
+//         time: timeLeft
+//     }
+
+//     scoreStats.initial = initial;
+//     console.log(scoreStats.initial);
+//     console.log(scoreStats);
+
+//     localStorage.setItem("highscores", JSON.stringify(playerStats));
+
+//     homeActive();
+    
+// })

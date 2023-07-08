@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="./assets/css/styles.css" />
   </head>
   <body>
+    <!-- --- -->
+    <!-- --- -->
     <!-- !!! ----- Start Screen Window ----- !!! -->
     <section class="screen-window" id="homeScreen">
       <div class="interface-container" id="homeScreenInterface">
@@ -26,6 +28,8 @@
         </div>
       </div>
     </section>
+    <!-- --- -->
+    <!-- --- -->
     <!-- !!! ----- Game Instructions Window ----- !!! -->
     <section class="screen-window" id="rulesScreen">
       <div class="interface-container" id="rulesScreenInterface">
@@ -43,6 +47,8 @@
         </div>
       </div>
     </section>
+    <!-- --- -->
+    <!-- --- -->
     <!-- !!! ----- Game Screen Window ----- !!! -->
     <section class="screen-window" id="gameScreen">
       <div class="interface-container">
@@ -65,28 +71,6 @@
               <a class="option-item" id="optC"></a>
               <a class="option-item" id="optD"></a>
             </div>
-            <!-- <form class="option-area" id="optionArea">
-              <label class="option-item">
-                <input type="radio" class="radio-option" id="optA" name="radioOption" value="Blank?" />
-                <span></span>
-              </label>
-              <label class="option-item">
-                <input type="radio" class="radio-option" id="optB" name="radioOption" value="Blanked?" />
-                <span></span>
-              </label>
-              <label class="option-item">
-                <input type="radio" class="radio-option" id="optC" name="radioOption" value="Blankers?" />
-                <span></span>
-              </label>
-              <label class="option-item">
-                <input type="radio" class="radio-option" id="optD" name="radioOption" value="" />
-                <span></span>
-              </label>
-            </form> -->
-            <!-- Submit Button -->
-            <!-- <a class="submit-btn" id="submitBtn"> -->
-            <!-- <img src="./assets/images/check-mark.png" />
-            </a> -->
           </div>
           <!-- Score and Time Bar -->
           <div class="stats-area" id="statBar">
@@ -102,6 +86,35 @@
         </div>
       </div>
     </section>
+    <!-- --- -->
+    <!-- --- -->
+    <!-- !!! ----- Record Screen Window ----- !!! -->
+    <section class="screen-window" id="recordScreen">
+      <div class="interface-container">
+        <!-- --- -->
+        <!-- --- -->
+        <!-- Title Card -->
+        <div class="title" id="recordTitle">
+          <h1>The Great Code Quiz</h1>
+        </div>
+        <!-- --- -->
+        <!-- --- -->
+        <!-- Record Interface -->
+        <div class="interface" id="recordIntF">
+          <div class="record-content">
+            <h3>Test Complete!</h3>
+            <form id="initialForm">
+                <label for="initial">Initials: </label><br>
+                <input type="text" id="initial" name="initial" value="">
+                <input type="submit" value="Submit">
+            </form>
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+    <!-- --- -->
+    <!-- --- -->
     <!-- !!! ----- Scorebaord Window ----- !!! -->
     <section class="screen-window" id="scoreScreen">
       <div class="interface-container" id="scoreContainer">
@@ -116,7 +129,7 @@
         <div class="interface" id="scoreIntF">
           <h2>HighScores</h2>
           <div class="score-board">
-            <p id="scoreChart">Matthew 89</p>
+            
           </div>
         </div>
       </div>
@@ -124,9 +137,10 @@
     <script src="./assets/js/page-navigation.js"></script>
     <script src="./assets/js/questions.js"></script>
     <script src="./assets/js/question-switch.js"></script>
+    <script src="./assets/js/end-game.js"></script>
     <script src="./assets/js/timer.js"></script>
     <script src="./assets/js/handle-selection.js"></script>
-    <script src="./assets/js/end-game.js"></script>
+    <!-- <script src="./assets/js/handle-form.js"></script> -->
     <script src="./assets/js/init.js"></script>
   </body>
 </html>

@@ -9,14 +9,17 @@ var radioD = document.getElementById("optD");
 
 let radioOptions = [radioA, radioB, radioC, radioD]
 
+var i;
+
 function questionSwitch() {
 
     if (currentQuestion < 5) {
 
         document.getElementById("questionItem").textContent = "";
         
-        for (var i = 0; i < radioOptions.length; i++) {
+        for (i = 0; i < radioOptions.length; i++) {
             radioOptions[i].textContent = "";
+            // console.log(i);
         }
 
         // Variables and Arrays compiling data for the Functions
@@ -26,11 +29,13 @@ function questionSwitch() {
 
         for (var i = 0; i < radioOptions.length; i++) {
             radioOptions[i].textContent = questionList[currentQuestion].options[i];
-            console.log(radioOptions[i].textContent);
+            // console.log(radioOptions[i].textContent);
         }
     }
     else {
-        endGame();
+        // endGame();
+        currentQuestion = 0;
+        recordActive();
     }
     
 }
